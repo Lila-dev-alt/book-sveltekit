@@ -1,5 +1,5 @@
 <script>
-	import MiniProfile from '../../lib/components/miniProfile.svelte';
+	import MiniProfile from '$lib/components/miniProfile.svelte';
 
 	const dataProfile = {
 		img: 'https://www.zooplus.fr/magazine/wp-content/uploads/2019/08/chat-siberien-sur-un-lit.jpg',

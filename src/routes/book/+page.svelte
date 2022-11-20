@@ -1,10 +1,10 @@
 <script>
-	import Image from '../../lib/components/Image.svelte';
-	import { cats } from '../../lib/data/Cats.js';
-	import Cat from '../../lib/components/Cat.svelte';
-	import Search from '../../lib/components/Search.svelte';
-	import NotFound from '../../lib/components/NotFound.svelte';
-	import AddCat from '../../lib/components/AddCat.svelte';
+	import Image from '$lib/components/Image.svelte';
+	import { cats } from '$lib/data/Cats.js';
+	import Cat from '$lib/components/Cat.svelte';
+	import Search from '$lib/components/Search.svelte';
+	import NotFound from '$lib/components/NotFound.svelte';
+	import AddCat from '$lib/components/AddCat.svelte';
 	let searchTerm = '';
 	let filteredCats = [];
 
@@ -60,12 +60,15 @@
 	{:else}
 		<div class="container">
 			{#each $cats as data}
-				<Cat
-					name={data.name}
-					description={data.description}
-					origin={data.origin}
-					image={data.image}
-				/>
+				<div class="contain">
+					<a href={`/book/${data.name}`}>{data.name}</a>
+					<Cat
+						name={data.name}
+						description={data.description}
+						origin={data.origin}
+						image={data.image}
+					/>
+				</div>
 			{/each}
 		</div>
 		<AddCat {addToArray} />
@@ -93,5 +96,10 @@
 		justify-content: center;
 		align-items: center;
 		padding: 2% 0;
+	}
+	.contain {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 </style>

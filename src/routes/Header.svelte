@@ -25,7 +25,7 @@
 			<li aria-current={$page.url.pathname === '/images' ? 'page' : undefined}>
 				<a href="/images">Images</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/book' ? 'page' : undefined}>
+			<li aria-current={$page.url.pathname === '/book' ? 'index' : undefined}>
 				<a href="/book">Book of cat breeds</a>
 			</li>
 		</ul>

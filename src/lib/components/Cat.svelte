@@ -35,7 +35,9 @@
 		font-size: 20px;
 	}
 	img {
-		max-width: 100%;
-		max-height: 100%;
+		width: 50vw;
+		height: 70vh;
+		max-width: 310px;
+		max-height: 250px;
 	}
 </style>
