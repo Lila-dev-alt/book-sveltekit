@@ -22,8 +22,8 @@
 			<li aria-current={$page.url.pathname === '/profile' ? 'page' : undefined}>
 				<a href="/profile">Profile</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/slider') ? 'page' : undefined}>
-				<a href="/slider">Images</a>
+			<li aria-current={$page.url.pathname === '/images' ? 'page' : undefined}>
+				<a href="/images">Images</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
