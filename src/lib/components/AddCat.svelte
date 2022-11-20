@@ -5,7 +5,7 @@
 	export let addToArray = (data) => {};
 </script>
 
-<h2>Add of cat breed in the book</h2>
+<h2>Add a cat breed in the book</h2>
 <input bind:value={name} type="text" placeholder="breed name" />
 <input bind:value={description} type="text" placeholder="breed description" />
 <input bind:value={origin} type="text" placeholder="breed origin" />

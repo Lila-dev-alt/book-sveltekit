@@ -49,12 +49,15 @@
 	{:else if filteredCats.length > 0}
 		{#each filteredCats as data}
 			<div class="container-only-cat">
-				<Cat
-					name={data.name}
-					description={data.description}
-					origin={data.origin}
-					image={data.image}
-				/>
+				<div class="contain">
+					<a href={`/book/${data.name}`}>{data.name}</a>
+					<Cat
+						name={data.name}
+						description={data.description}
+						origin={data.origin}
+						image={data.image}
+					/>
+				</div>
 			</div>
 		{/each}
 	{:else}
